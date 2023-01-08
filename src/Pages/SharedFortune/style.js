@@ -42,6 +42,13 @@ export const ShowFortuneBox = styled.div`
   }
 `;
 
+export const ResultFortune = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
 export const CloseFortune = styled.button`
   width: 50px;
   height: 50px;
@@ -58,37 +65,11 @@ export const CloseFortune = styled.button`
   }
 `;
 
-export const ReturnButton = styled.button`
-  width: 250px;
-  height: 93px;
-  background-color: #e8ebf2;
-  z-index: 9999;
-  border: none;
-  font-size: 200%;
-  color: #8f85ff;
-  cursor: pointer;
-  transform: translateY(-7%);
-  @media screen and (max-width: 720px) {
-    width: 34vw;
-    height: 14vw;
-    font-size: 5vw;
-  }
+export const ResultText = styled.p`
+  font-size: 30px;
 `;
-export const ShareButton = styled.button`
-  width: 250px;
-  height: 93px;
-  background-color: #e8ebf2;
-  z-index: 9999;
-  transform: translateY(-7%);
-  border: none;
-  font-size: 200%;
+export const ResultTitle = styled.h1`
   color: #8f85ff;
-  cursor: pointer;
-  @media screen and (max-width: 720px) {
-    width: 34vw;
-    height: 14vw;
-    font-size: 5vw;
-  }
 `;
 
 export const WrapButton = styled.div`
@@ -96,23 +77,26 @@ export const WrapButton = styled.div`
   bottom: 4%;
   display: flex;
   position: absolute;
+
   justify-content: space-between;
   @media screen and (max-width: 720px) {
     width: 83vw;
   }
 `;
 
-export const ResultFortune = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-`;
-
-export const ResultText = styled.p`
-  font-size: 30px;
-`;
-
-export const ResultTitle = styled.h1`
+export const MainButton = styled.button`
+  width: 250px;
+  height: 93px;
+  background-color: #e8ebf2;
+  z-index: 9999;
+  margin: 0 auto;
+  border: none;
+  font-size: 200%;
   color: #8f85ff;
+  cursor: pointer;
+  @media screen and (max-width: 720px) {
+    width: 34vw;
+    height: 14vw;
+    font-size: 5vw;
+  }
 `;
